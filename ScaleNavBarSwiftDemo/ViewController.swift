@@ -61,13 +61,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 	
 	// MARK: - callbacks and helpers
 	
-	func hideNaviBtnClick() -> Void
+	@objc func hideNaviBtnClick() -> Void
 	{
 		let hideVC = HGHideNaviBarVC()
 		self.navigationController?.pushViewController(hideVC, animated: true)
 	}
 	
-	func nextBtnClick() -> Void
+	@objc func nextBtnClick() -> Void
 	{
 		let transparentBarVC = HGTransparentNaviBarVC()
 		
